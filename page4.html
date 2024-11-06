@@ -13,6 +13,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Page 4</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script>
+    function differentText() {
+        document.getElementById("original").textContent = "Changed text!";
+    }
+</script>
   </head>
   <body>
     <h1>Page 4</h1>
@@ -37,45 +42,8 @@
    <button type="button" class="btn btn-outline-info">
       <a href="page5.html">Page 5</a>
     </button>
-</br>
-<div class="spinner-border text-primary" role="status">
-  Loading #1
-  <span class="visually-hidden">Loading...</span>
-</div>
-  </br>
-<div class="spinner-border text-secondary" role="status">
-  Loading #1
-  <span class="visually-hidden">Loading...</span>
-</div>
-  </br>
-<div class="spinner-border text-success" role="status">
-  Loading #1
-  <span class="visually-hidden">Loading...</span>
-</div>
-  </br>
-<div class="spinner-border text-danger" role="status">
-  Loading #1
-  <span class="visually-hidden">Loading...</span>
-</div>
-  </br>
-<div class="spinner-border text-warning" role="status">
-  Loading #1
-  <span class="visually-hidden">Loading...</span>
-</div>
-  </br>
-<div class="spinner-border text-info" role="status">
-  Loading #1
-  <span class="visually-hidden">Loading...</span>
-</div>
-  </br>
-<div class="spinner-border text-light" role="status">
-  Loading #1
-  <span class="visually-hidden">Loading...</span>
-</div>
-  </br>
-<div class="spinner-border text-dark" role="status">
-  Still Loading #1!!!!
-  <span class="visually-hidden">Loading...</span>
-</div>
-  </br>
+  
+<p id="originalText">Before change text</p>
+<button onclick="differentText()">Change</button>
+
 </html>
